@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "watch": "ng test --configuration=test --browsers ChromeHeadless --watch",
-    "build:prod": "ng build --prod --vendor-chunk",
-    "postinstall": "ng build --aot -prod"
+    "build:prod": "ng build --prod --vendor-chunk"
   },
   "engine": {
     "node": "8.9.4",
@@ -64,7 +63,7 @@
     "@types/node": "^8.10.36",
     "all-contributors-cli": "^5.2.1",
     "codelyzer": "~4.3.0",
-    "enhanced-resolve": "^3.3.0",
+    "enhanced-resolve": "^3.4.1",
     "express": "^4.16.4",
     "husky": "^1.0.0-rc.13",
     "jasmine-core": "~2.99.1",
