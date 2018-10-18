@@ -17,6 +17,7 @@
     "@angular/cdk": "^6.4.7",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
+    "@angular/compiler-cli": "^6.1.0",
     "@angular/core": "^6.1.0",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
@@ -49,7 +50,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.8.5",
     "@angular/cli": "^6.2.5",
-    "@angular/compiler-cli": "^6.1.0",
+
     "@angular/language-service": "^6.1.0",
 
     "@types/jasmine": "~2.8.8",
