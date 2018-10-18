@@ -58,11 +58,13 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.8.5",
     "@angular/language-service": "^6.1.0",
+    "@bahmutov/add-typescript-to-cypress": "^2.0.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^8.10.36",
     "all-contributors-cli": "^5.2.1",
     "codelyzer": "~4.3.0",
+    "cypress": "^3.1.0",
     "enhanced-resolve": "^3.4.1",
     "express": "^4.16.4",
     "husky": "^1.0.0-rc.13",
