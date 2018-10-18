@@ -18,6 +18,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "^0.8.5",
     "@angular/animations": "^6.1.10",
     "@angular/cdk": "^6.4.7",
     "@angular/cli": "^6.2.5",
