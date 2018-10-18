@@ -14,10 +14,10 @@ const routes: Routes = [
     component: SettingsContainerComponent,
     data: { title: 'anms.menu.settings' }
   },
-  {
-    path: 'examples',
-    loadChildren: 'app/examples/examples.module#ExamplesModule'
-  },
+  // {
+  //   path: 'examples',
+  //   loadChildren: 'app/examples/examples.module#ExamplesModule'
+  // },
   {
     path: '**',
     redirectTo: 'about'
