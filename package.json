@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "watch": "ng test --configuration=test --browsers ChromeHeadless --watch",
     "build:prod": "ng build --prod --vendor-chunk",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot"
   },
   "engine": {
     "node": "8.9.4",
