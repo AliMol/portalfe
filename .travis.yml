@@ -16,6 +16,6 @@ install:
   - npm install
 script:
   # run build script specified in package.json
-  - npm run ci
+  - npm start
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy.sh
