@@ -20,7 +20,7 @@ install:
 
 script:
   # run build script specified in package.json
-  - npm build
+  - npm ci
   # call script for deploying of produced artifacts
 
 deploy:
