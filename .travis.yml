@@ -14,7 +14,7 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 install:
   - npm i -g npm@6.0.1
-  - npm ci
+  - npm ci --only=production
 script:
   # run build script specified in package.json
   - npm run ci
