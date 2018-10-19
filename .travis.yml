@@ -20,7 +20,7 @@ install:
 
 script:
   # run build script specified in package.json
-  - npm build --base-href https://AliMol.github.io/portalfe/
+  - npm build --base-href 
   # call script for deploying of produced artifacts
 
 deploy:
