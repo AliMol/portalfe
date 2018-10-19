@@ -23,6 +23,7 @@ script:
   - npm build --base-href https://alimol.github.io/portalfe
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy.sh
+  
 
 deploy:
     provider: pages
