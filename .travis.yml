@@ -22,11 +22,11 @@ script:
   # run build script specified in package.json
   - npm build --base-href https://AliMol.github.io/portalfe/
   # call script for deploying of produced artifacts
- 
+
 deploy:
     provider: pages
     skip_cleanup: true
-    github_token: 'e8a9039cb5959d23be45f4c9fae8a1f180a13929'
+    github_token: $GITHUB_TOKEN
     local_dir: dist/STaaSPortalFE
     on:
       branch: master
