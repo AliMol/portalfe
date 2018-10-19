@@ -20,11 +20,9 @@ install:
 
 script:
   # run build script specified in package.json
-  - npm build --base-href https://alimol.github.io/portalfe
+  - npm build --base-href https://AliMol.github.io/portalfe/
   # call script for deploying of produced artifacts
-  - bash ./.travis-deploy.sh
-  
-
+ 
 deploy:
     provider: pages
     skip_cleanup: true
