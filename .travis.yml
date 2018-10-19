@@ -23,3 +23,11 @@ script:
   - npm build --base-href https://alimol.github.io/portalfe
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy.sh
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: 'e8a9039cb5959d23be45f4c9fae8a1f180a13929'
+    local_dir: dist/STaaSPortalFE
+    on:
+      branch: master
