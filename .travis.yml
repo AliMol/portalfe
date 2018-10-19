@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "9"
+  - "8"
 sudo: false
 dist: trusty
 branches:
@@ -16,11 +16,12 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 install:
-  - npm install
+  - npm i -g npm@5.6.0
+  - npm ci
 
 script:
   # run build script specified in package.json
-  - npm run clean && npm run prettier:ci && ng lint && ng test --configuration=test --browsers ChromeTravisCi && ng e2e && npm run cy:ci && npm run accessibility && npm run build:prod -- --deploy-url /portalfe/ --base-href /portalfe
+  - npm run ci
   # call script for deploying of produced artifacts
 
 deploy:
