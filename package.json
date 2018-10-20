@@ -15,14 +15,12 @@
     "prod": "npm run clean && npm run build:prod && npm run server",
     "ci": "npm run clean && npm run prettier:ci && ng lint && ng test --configuration=test --browsers ChromeTravisCi && ng e2e && npm run cy:ci && npm run accessibility && npm run build:prod -- --deploy-url /portalfe/ --base-href /portalfe",
     "release": "standard-version && git push --follow-tags origin master",
-    "prettier": "prettier {src,e2e,cypress}/**/*.{ts,json,md,scss} --write",
-    "prettier:ci": "prettier {src,e2e,cypress}/**/*.{ts,json,md,scss} --list-different",
+
     "analyze": "npm run clean && npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/stats.json",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate && node .all-contributors-html.js",
     "contributors:check": "all-contributors check",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
+
     "precy:ci": "npm run build:prod -- --deploy-url \"/portalfe/\" --base-href \"/portalfe\"",
     "cy:ci": "npm-run-all --parallel --race server \"cy:run -- --config=baseUrl=http://localhost:4200\"",
     "preaccessibility": "npm run build:prod -- --deploy-url \"/portalfe/\" --base-href \"/portalfe\"",
@@ -68,12 +66,12 @@
     "@angular/cli": "~6.1.3",
     "@angular/compiler-cli": "^6.1.2",
     "@angular/language-service": "^6.1.0",
-    "@bahmutov/add-typescript-to-cypress": "^2.0.0",
+
     "@types/jasmine": "~2.8.8",
     "@types/node": "^8.10.36",
     "all-contributors-cli": "^5.2.1",
     "codelyzer": "~4.3.0",
-    "cypress": "^3.1.0",
+
     "express": "^4.16.4",
     "husky": "^1.0.0-rc.13",
     "jasmine-core": "~2.99.1",
