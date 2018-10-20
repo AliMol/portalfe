@@ -21,7 +21,7 @@ install:
 
 script:
   # run build script specified in package.json
-  - npm run clean && npm run prettier:ci && ng lint && ng test --configuration=test --browsers ChromeTravisCi && ng e2e && npm run cy:ci && npm run accessibility && npm run build:prod -- --deploy-url /portalfe/ --base-href /portalfe
+  - npm run build:prod -- --deploy-url /portalfe/ --base-href /portalfe
   # call script for deploying of produced artifacts
 
 deploy:
